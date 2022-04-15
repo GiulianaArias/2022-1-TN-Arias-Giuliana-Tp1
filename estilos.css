@@ -1,0 +1,143 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Piazolla", "serif";
+}
+
+header {
+	background-color:#84CBAB;
+	background-size: 100%;
+	width: 100%;
+	padding-top: 20px;
+}
+
+.botonera {
+	display: flex;
+	justify-content:center;
+	background-color:#FFB2B2;
+	width: 100%;
+	padding:10px 0px 12px 0px;
+}
+
+.botonera a {
+	font-size: 20px;
+	text-decoration: none;
+	color: darkslategray;
+	font-weight: 700;
+	padding: 25px 0px 20px 25px;
+}
+
+.botonera a:hover {
+	color: #84CBAB;
+}
+
+.botonera a:active {
+	background-color: #84CBAB;
+}
+
+nav ul li {
+	display: inline;
+}
+
+.titulo {
+	margin-top:30px;
+	padding: 0px 5px 50px 20px;
+	display: flex;
+}
+
+h1 {
+	color: darkslategray;
+	font-size: 60px;
+	padding: 40px 30px 10px 20px;
+}
+
+main {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+}
+
+.presentacion {
+	font-size: 15px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	margin-left: 40px;
+	max-width: 1000px;
+	display: flex;
+	flex-direction: row;
+}
+
+.datos{
+	font-size: 15px;
+	display: flex;
+	flex-grow: 1;
+	padding: 5px 90px 25px 40px;
+}
+
+.educacion{
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	padding: 0px 50px 25px 100px;
+}
+
+h3 {
+	font-weight: 700;
+	color: darkslategray;
+	font-size: 25px;
+	margin-top: 15px;
+	padding-left: 15px;
+	border-radius: 5px;
+	background-color:#FFB2B2;;
+}
+
+h4 {
+	font-weight: 600;
+	color: #84CBAB;
+	font-size: 20px;
+	padding-top: 10px;
+	padding-left: 15px;
+}
+
+p {
+	font-weight: 400;
+	font-size: 15px;
+	margin: 5px 20px 0px;
+	padding-left: 15px;
+}
+
+ul li {
+	padding-left: 15px;
+	list-style: none;
+	font-size: 15px;
+	font-weight: 400;
+	margin: 5px 20px 0px;
+}
+
+span { 
+	font-weight: 600;
+}
+
+footer {
+	font-weight: 600;
+	background-color:#84CBAB;
+	color: darkslategray;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+@font-face{
+	font-family: "Piazolla";
+	src: url("fonts/Piazzolla-Regular.ttf") format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
