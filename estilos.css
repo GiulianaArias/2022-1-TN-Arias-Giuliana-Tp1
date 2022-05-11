@@ -46,11 +46,13 @@ nav ul li {
 	margin-top:30px;
 	padding: 0px 5px 50px 20px;
 	display: flex;
+	max-width: 100%;
+	justify-content: center;
 }
 
 h1 {
 	color: darkslategray;
-	font-size: 60px;
+	font-size: 3.75em;
 	padding: 40px 30px 10px 20px;
 }
 
@@ -69,28 +71,26 @@ main {
 	margin-bottom: 20px;
 	margin-left: 40px;
 	max-width: 1000px;
-	display: flex;
-	flex-direction: row;
+	justify-content:center;
 }
 
 .datos{
-	font-size: 15px;
+	font-size: 0.938em;
 	display: flex;
-	flex-grow: 1;
-	padding: 5px 90px 25px 40px;
+	justify-content: center;
 }
 
 .educacion{
 	display: flex;
 	flex-direction: column;
-	flex-grow: 1;
-	padding: 0px 50px 25px 100px;
+	justify-content: center;
+	padding: 0px 0px 30px 90px;
 }
 
 h3 {
 	font-weight: 700;
 	color: darkslategray;
-	font-size: 25px;
+	font-size: 1.563em;
 	margin-top: 15px;
 	padding-left: 15px;
 	border-radius: 5px;
@@ -100,14 +100,14 @@ h3 {
 h4 {
 	font-weight: 600;
 	color: #84CBAB;
-	font-size: 20px;
+	font-size: 1.25em;
 	padding-top: 10px;
 	padding-left: 15px;
 }
 
 p {
 	font-weight: 400;
-	font-size: 15px;
+	font-size: 0.938em;
 	margin: 5px 20px 0px;
 	padding-left: 15px;
 }
@@ -115,7 +115,7 @@ p {
 ul li {
 	padding-left: 15px;
 	list-style: none;
-	font-size: 15px;
+	font-size: 0.938em;
 	font-weight: 400;
 	margin: 5px 20px 0px;
 }
@@ -140,4 +140,45 @@ footer {
 	src: url("fonts/Piazzolla-Regular.ttf") format('truetype');
 	font-weight: normal;
 	font-style: normal;
+}
+
+@media screen and (max-width: 600px) {
+	
+	.titulo {
+		font-size: 0,75em;
+		max-width: 100%;
+	}
+	
+	main {
+		max-width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	.presentacion {
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+	}
+	
+	.datos{
+		font-size: 0.938em;
+		flex-direction: column;
+		justify-content: center;
+		padding: 5px 60px;
+	}
+	
+	.educacion{
+		max-width: 100%;
+		font-size: 0.938em;
+		flex-direction: column;
+		padding: 10px 0px 30px;
+		justify-content: center;
+	}
+	
+	.conocimiento{
+		padding-top: 10px;
+	}
+
 }
